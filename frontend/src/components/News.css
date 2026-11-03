@@ -1,0 +1,3 @@
+/* Placeholder styles for News component */
+.news-section { padding: var(--space-2xl) 0; text-align: center; }
+.news-section h2 { margin-bottom: var(--space-md); }

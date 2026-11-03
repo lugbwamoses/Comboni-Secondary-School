@@ -1,0 +1,46 @@
+/* Programs component styling */
+.programs-section {
+  padding: var(--space-2xl) 0;
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-foreground);
+}
+
+.programs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+
+.program-card {
+  background: var(--color-card);
+  padding: var(--space-lg);
+  border-radius: 0.75rem;
+  width: 260px;
+  box-shadow: var(--shadow-md);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.program-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-foreground);
+}
+
+.program-desc {
+  font-size: 1rem;
+  color: var(--color-muted-foreground);
+}

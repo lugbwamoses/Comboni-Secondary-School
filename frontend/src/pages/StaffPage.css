@@ -1,0 +1,142 @@
+/* Staff Directory Styles */
+.staff-page {
+  padding-bottom: 90px;
+}
+
+.staff-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.staff-controls-bar {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 18px 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.staff-count {
+  font-size: 0.95rem;
+  color: #64748B;
+}
+
+.staff-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 28px;
+}
+
+.staff-directory-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.staff-directory-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  border-color: #CBD5E1;
+}
+
+.staff-photo-col {
+  margin: 0;
+  height: 100%;
+  background: #F1F5F9;
+}
+
+.staff-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff-info-col {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-dept-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0F766E;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.staff-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.staff-position {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #D97706;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.staff-qual-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.staff-bio {
+  font-size: 0.88rem;
+  color: #64748B;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  flex: 1;
+}
+
+.staff-footer {
+  border-top: 1px solid #F1F5F9;
+  padding-top: 12px;
+}
+
+.staff-email-link {
+  color: #0F766E;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.staff-email-link:hover {
+  color: #D97706;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .staff-directory-card {
+    grid-template-columns: 1fr;
+  }
+  .staff-photo-col {
+    height: 220px;
+  }
+}
+

@@ -1,0 +1,243 @@
+/* Research Page Styling */
+.research-page {
+  padding-bottom: 90px;
+}
+
+.research-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.research-intro-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.research-intro-card h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 6px 0 16px 0;
+}
+
+.research-intro-card p {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Research Areas */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 26px;
+  margin-top: 24px;
+}
+
+.research-area-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #F59E0B;
+  margin-bottom: 14px;
+}
+
+.research-area-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 8px 0;
+}
+
+.area-lead-name {
+  font-size: 0.85rem;
+  color: #0F766E;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.research-area-card p {
+  font-size: 0.92rem;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Publications */
+.pubs-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pubs-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  width: 280px;
+}
+
+.pubs-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.88rem;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.publication-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.pub-meta-top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pub-category-tag {
+  background: #E0F2FE;
+  color: #0369A1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.pub-year-tag {
+  background: #F1F5F9;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 6px 0;
+  line-height: 1.35;
+}
+
+.pub-authors {
+  display: block;
+  font-size: 0.9rem;
+  color: #334155;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pub-publisher {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748B;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+.pub-actions-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-toggle-abstract {
+  background: none;
+  border: 1px solid #CBD5E1;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  color: #334155;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-toggle-abstract:hover {
+  background: #F8FAFC;
+  border-color: #94A3B8;
+}
+
+.chevron-icon {
+  transition: transform 0.2s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.btn-download-pdf {
+  color: #0F766E;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-download-pdf:hover {
+  color: #D97706;
+  text-decoration: underline;
+}
+
+.pub-abstract-box {
+  margin-top: 20px;
+  padding: 18px 22px;
+  background: #F8FAFC;
+  border-left: 3px solid #0F766E;
+  border-radius: 8px;
+}
+
+.pub-abstract-box h4 {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  color: #0F172A;
+  margin: 0 0 6px 0;
+}
+
+.pub-abstract-box p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+

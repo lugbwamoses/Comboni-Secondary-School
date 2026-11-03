@@ -1,0 +1,399 @@
+/* St. Daniel Comboni Secondary School Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  width: 100%;
+}
+
+/* 1. Top Utility Bar */
+.top-utility-bar {
+  background-color: #0F172A; /* Deep Navy */
+  color: #94A3B8;
+  font-size: 0.8125rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.utility-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.utility-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.utility-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #CBD5E1;
+}
+
+.utility-item a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.utility-item a:hover {
+  color: #F59E0B;
+}
+
+.utility-icon {
+  color: #F59E0B;
+}
+
+.utility-right {
+  display: flex;
+  align-items: center;
+}
+
+.utility-quick-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.util-link {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.util-link:hover {
+  color: #FFFFFF;
+}
+
+.admin-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(13, 148, 136, 0.2);
+  color: #2DD4BF;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+.admin-pill:hover {
+  background: #0D9488;
+  color: #FFFFFF;
+}
+
+.portal-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 3px 12px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.portal-badge-link:hover {
+  background: #F59E0B;
+  color: #0F172A;
+}
+
+/* 2. Main Navigation Bar */
+.main-nav-bar {
+  padding: 12px 0;
+  background: #FFFFFF;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  width: min(96%, 1600px);
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.school-crest-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-main-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.school-sub-name {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #D97706;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Main Navigation Menu */
+.main-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #D97706;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #D97706;
+  border-radius: 2px;
+}
+
+/* Dropdowns */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #334155;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 0;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn.active {
+  color: #D97706;
+}
+
+.dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  min-width: 220px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  animation: dropFade 0.15s ease-out;
+}
+
+.dropdown-panel a {
+  padding: 9px 14px;
+  color: #1E293B;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.dropdown-panel a:hover {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+/* Header Action Group */
+.header-action-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.btn-header-search {
+  background: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-header-search:hover {
+  background: #E2E8F0;
+  color: #0F172A;
+}
+
+.btn-primary-apply {
+  background: linear-gradient(135deg, #F59E0B, #EA580C);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary-apply:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.45);
+  color: #FFFFFF;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0F172A;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes dropFade {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1360px) {
+  .top-utility-bar {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+  .main-nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #E2E8F0;
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    gap: 12px;
+  }
+  .main-nav-menu.mobile-open {
+    display: flex;
+  }
+  .nav-link, .dropdown-btn {
+    font-size: 1rem;
+    padding: 8px 0;
+    width: 100%;
+  }
+  .dropdown-panel {
+    position: static;
+    box-shadow: none;
+    border: 1px solid #F1F5F9;
+    background: #F8FAFC;
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .school-sub-name {
+    display: none;
+  }
+  .btn-primary-apply span {
+    display: none;
+  }
+  .btn-primary-apply {
+    padding: 10px 14px;
+  }
+
+  .nav-bar-container {
+    width: 92%;
+    gap: 8px;
+  }
+
+  .school-main-name {
+    font-size: clamp(0.9rem, 4vw, 1.08rem);
+  }
+
+  .school-crest-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .header-action-group {
+    gap: 6px;
+  }
+}

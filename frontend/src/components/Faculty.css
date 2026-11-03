@@ -1,0 +1,6 @@
+/* Placeholder styles for Faculty component */
+.faculty-section { padding: var(--space-2xl) 0; text-align: center; }
+.faculty-title { margin-bottom: var(--space-md); }
+.faculty-grid { display: flex; flex-wrap: wrap; gap: var(--space-lg); justify-content: center; }
+.faculty-card { background: var(--color-surface-variant); color: var(--color-on-surface-variant); padding: var(--space-md); border-radius: var(--radius-md); width: 260px; }
+.faculty-card-title { margin-bottom: var(--space-sm); }

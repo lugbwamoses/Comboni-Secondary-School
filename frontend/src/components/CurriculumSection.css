@@ -1,0 +1,149 @@
+/* Curriculum / Courses Section */
+.curriculum-section {
+  padding: 100px 0 110px 0;
+  background-color: #F8FAFC;
+}
+
+.curriculum-header {
+  margin-bottom: 56px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.curriculum-lead {
+  color: #64748B;
+  max-width: 600px;
+  margin: 14px auto 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+  border: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+  border-color: #CBD5E1;
+}
+
+.course-figure {
+  position: relative;
+  height: 210px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.course-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05);
+}
+
+.course-badge-pill {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #F59E0B;
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.badge-accent {
+  background: #0D9488;
+}
+
+.course-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.course-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #64748B;
+  margin-bottom: 14px;
+}
+
+.meta-subjects {
+  font-weight: 600;
+  color: #0F766E;
+  background: #CCFBF1;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.meta-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+}
+
+.course-description {
+  font-size: 0.925rem;
+  color: #64748B;
+  line-height: 1.55;
+  margin: 0 0 22px 0;
+  flex: 1;
+}
+
+.course-footer {
+  border-top: 1px solid #F1F5F9;
+  padding-top: 16px;
+}
+
+.course-enroll-link {
+  color: #D97706;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.course-enroll-link:hover {
+  color: #B45309;
+  gap: 10px;
+}
+

@@ -1,0 +1,164 @@
+/* Design System CSS – generated from UI/UX Pro Max */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
+/* Color palette */
+:root {
+  --color-primary: #1E3A5F;      /* Navy */
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #2563EB;    /* Bright Blue */
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #A16207;      /* Amber/Gold */
+  --color-on-accent: #FFFFFF;
+  --color-background: #F8FAFC;  /* Light gray */
+  --color-foreground: #0F172A;  /* Dark text */
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0F172A;
+  --color-muted: #E9EEF5;
+  --color-muted-foreground: #475569;
+  --color-border: #CBD5E1;
+  --color-destructive: #DC2626;
+  --color-on-destructive: #FFFFFF;
+  --color-ring: #1E3A5F;
+}
+
+/* Spacing tokens */
+:root {
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+}
+
+/* Shadow depths */
+:root {
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+}
+
+/* Typography */
+html {
+  font-family: 'Crimson Text', serif;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+  color: var(--color-foreground);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* Cards */
+.card {
+  background: var(--color-card);
+  border-radius: 0.75rem;
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Inputs */
+.input {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-muted);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 200ms ease;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-primary)20;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-xl);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Utility classes */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.bg-primary { background: var(--color-primary); color: var(--color-on-primary); }
+.bg-secondary { background: var(--color-secondary); color: var(--color-on-secondary); }
+.bg-accent { background: var(--color-accent); color: var(--color-on-accent); }
+
+/* Accessibility helpers */
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

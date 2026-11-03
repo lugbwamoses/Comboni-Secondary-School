@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+backend/.venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/dev.db
+backend/test.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local tooling and credentials
+.agents/
+.aider-desk/
+.aws/
+.vercel/
+
+# Unrelated personal media in the project folder
+WhatsApp Image*.jpeg

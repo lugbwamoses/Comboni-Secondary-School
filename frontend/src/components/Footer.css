@@ -1,0 +1,254 @@
+/* Academic Professional Footer */
+.site-footer {
+  background-color: #0F172A;
+  color: #94A3B8;
+  padding-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  padding-bottom: 60px;
+}
+
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.footer-logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-brand-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.footer-brand-sub {
+  display: block;
+  font-size: 0.78rem;
+  color: #F59E0B;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-mission-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #94A3B8;
+  margin: 0 0 20px 0;
+}
+
+.footer-contact-address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #CBD5E1;
+}
+
+.contact-line a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-line a:hover {
+  color: #F59E0B;
+}
+
+.footer-social-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-nav a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #CBD5E1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social-nav a:hover {
+  background: #F59E0B;
+  color: #0F172A;
+  transform: translateY(-2px);
+}
+
+.footer-col-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 22px 0;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #F59E0B;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-list a {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links-list a:hover {
+  color: #F59E0B;
+  transform: translateX(4px);
+}
+
+.newsletter-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #94A3B8;
+  margin: 0 0 16px 0;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 16px;
+  border-radius: 9999px 0 0 9999px;
+  color: #FFFFFF;
+  font-size: 0.88rem;
+  outline: none;
+  width: 100%;
+}
+
+.newsletter-input:focus {
+  border-color: #F59E0B;
+}
+
+.newsletter-submit-btn {
+  background: #F59E0B;
+  color: #0F172A;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 9999px 9999px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.newsletter-submit-btn:hover {
+  background: #D97706;
+  color: #FFFFFF;
+}
+
+.motto-callout {
+  font-size: 0.85rem;
+  color: #CBD5E1;
+  font-style: italic;
+  border-left: 2px solid #F59E0B;
+  padding-left: 12px;
+}
+
+.motto-callout span {
+  color: #F59E0B;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 0;
+  background: #0B1120;
+}
+
+.bottom-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.copyright-notice {
+  font-size: 0.82rem;
+  color: #64748B;
+}
+
+.legal-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-nav a {
+  color: #64748B;
+  font-size: 0.82rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legal-nav a:hover {
+  color: #F59E0B;
+}
+
+@media (max-width: 992px) {
+  .footer-content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-content-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-bar-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

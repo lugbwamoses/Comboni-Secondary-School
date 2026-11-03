@@ -1,0 +1,4 @@
+/* Placeholder styles for Intro component */
+.intro-section { padding: var(--space-2xl) 0; text-align: center; }
+.intro-title { margin-bottom: var(--space-md); }
+.intro-text { max-width: 800px; margin: 0 auto; line-height: 1.6; }

@@ -1,0 +1,266 @@
+/* CMS Admin Portal Styles */
+.admin-cms-page {
+  padding-bottom: 90px;
+}
+
+.admin-header-banner {
+  background: linear-gradient(135deg, #0F172A, #042F2E);
+  color: #FFFFFF;
+  padding: 48px 0;
+  border-bottom: 4px solid #10B981;
+}
+
+.admin-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-badge-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.admin-banner-content h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.admin-banner-content p {
+  color: #CBD5E1;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0;
+}
+
+.btn-reset-data {
+  background: rgba(239, 68, 68, 0.2);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-reset-data:hover {
+  background: #EF4444;
+  color: #FFFFFF;
+}
+
+/* Layout */
+.admin-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  margin-top: 48px;
+  align-items: flex-start;
+}
+
+.admin-sidebar-nav {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-nav-item {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.admin-nav-item:hover,
+.admin-nav-item.active {
+  background: #0F172A;
+  color: #FFFFFF;
+}
+
+.admin-main-panel {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.admin-alert-banner {
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  color: #065F46;
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.admin-tab-pane h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 6px 0;
+}
+
+.tab-lead {
+  font-size: 0.95rem;
+  color: #64748B;
+  margin: 0 0 28px 0;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 36px;
+}
+
+.metric-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-icon {
+  color: #0F766E;
+  margin-bottom: 12px;
+}
+
+.metric-val {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.metric-lbl {
+  font-size: 0.8rem;
+  color: #64748B;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.recent-activity-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.recent-activity-card h3 {
+  font-size: 1.1rem;
+  color: #0F172A;
+  margin: 0 0 12px 0;
+}
+
+.recent-activity-card ul {
+  list-style: square;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #475569;
+}
+
+/* Admin Form */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.admin-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-input-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.admin-input-group input,
+.admin-input-group select,
+.admin-input-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.admin-input-group input:focus,
+.admin-input-group textarea:focus {
+  border-color: #0F766E;
+}
+
+.admin-input-group small {
+  font-size: 0.78rem;
+  color: #64748B;
+}
+
+.btn-admin-save {
+  background: #0F766E;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn-admin-save:hover {
+  background: #0D9488;
+}
+
+@media (max-width: 992px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

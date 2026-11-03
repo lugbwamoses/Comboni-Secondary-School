@@ -1,0 +1,51 @@
+/* Why component styling */
+.why-section {
+  padding: var(--space-2xl) 0;
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.why-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-foreground);
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+
+.why-card {
+  background: var(--color-card);
+  padding: var(--space-lg);
+  border-radius: 0.75rem;
+  width: 260px;
+  box-shadow: var(--shadow-md);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.why-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.why-card-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-foreground);
+}
+
+.why-card-text {
+  font-size: 1rem;
+  color: var(--color-muted-foreground);
+}

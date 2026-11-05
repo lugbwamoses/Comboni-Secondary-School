@@ -32,7 +32,7 @@ const ProgrammesPage = () => {
           <span className="banner-subtitle">SECONDARY SCHOOL</span>
           <h1 id="programmes-title" className="banner-title">Classes &amp; Streams</h1>
           <p className="banner-lead">
-            Explore the four senior classes and their streams at St. Daniel Comboni Secondary School.
+            Explore the four senior classes and their streams. New student admissions are available for Senior One only.
           </p>
         </div>
       </section>

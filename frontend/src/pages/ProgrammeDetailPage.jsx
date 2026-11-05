@@ -58,7 +58,7 @@ const ProgrammeDetailPage = () => {
           {/* Section: Requirements */}
           <section className="detail-block">
             <h2>Admissions</h2>
-            <p>Contact the school for current admission requirements and availability.</p>
+            <p>New student admissions are for Senior One only. The school does not offer vacancies in upper classes. See the Admissions page for application instructions.</p>
           </section>
         </main>
 

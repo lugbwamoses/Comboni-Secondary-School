@@ -1,13 +1,15 @@
 // St. Daniel Comboni Secondary School - Comprehensive Institutional Data Store
 // Juba, South Sudan
 
+export const defaultSchoolAddress = 'Kator, next to St. Theresa Cathedral, Juba, South Sudan';
+
 export const initialSiteData = {
   settings: {
     schoolName: "St. Daniel Comboni Secondary School",
     tagline: "Integral development and formation through formal and informal education",
     subTagline: "",
     location: "Juba, South Sudan",
-    address: "[School address to be confirmed]",
+    address: defaultSchoolAddress,
     primaryPhone: "[Official phone number]",
     admissionsPhone: "[Admissions phone number]",
     primaryEmail: "[Official email address]",

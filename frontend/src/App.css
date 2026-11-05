@@ -556,3 +556,21 @@ main :where(p, h1, h2, h3, h4, a, button, code) {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Small-screen grid and search controls */
+@media (max-width: 640px) {
+  main [class*="grid"],
+  main .form-cols-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main :where(.news-search-box, .pubs-search-box) {
+    width: 100%;
+    min-width: 0;
+  }
+
+  main :where(.news-search-box, .pubs-search-box) input {
+    min-width: 0;
+  }
+}

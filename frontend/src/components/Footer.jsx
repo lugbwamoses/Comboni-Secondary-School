@@ -4,6 +4,7 @@ import {
   MapPin, Mail, Phone, Share
 } from './Icons.jsx';
 import { useSite } from '../context/SiteContext.jsx';
+import { defaultSchoolAddress } from '../data/siteData.js';
 import logo from '../assets/logo.jpeg';
 import './Footer.css';
 
@@ -11,6 +12,7 @@ const Footer = () => {
   const { data } = useSite();
   const { settings } = data;
   const currentYear = new Date().getFullYear();
+  const schoolAddress = settings.address && !settings.address.startsWith('[') ? settings.address : defaultSchoolAddress;
 
   return (
     <footer className="site-footer" role="contentinfo">
@@ -33,7 +35,7 @@ const Footer = () => {
           <address className="footer-contact-address">
             <div className="contact-line">
               <MapPin size={16} aria-hidden="true" />
-              <span>{settings.address}</span>
+              <span>{schoolAddress}</span>
             </div>
             <div className="contact-line">
               <Mail size={16} aria-hidden="true" />

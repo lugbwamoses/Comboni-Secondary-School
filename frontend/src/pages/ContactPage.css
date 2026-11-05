@@ -227,43 +227,56 @@
   padding: 24px;
 }
 
-.location-map-card h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #0F172A;
-  margin: 0 0 14px 0;
+.location-map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
-.map-visual-placeholder {
-  height: 160px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #0F766E, #042F2E);
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
+.location-map-heading h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 4px;
+}
+
+.location-map-heading p {
+  color: #64748B;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.btn-map-directions {
+  min-height: 44px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-}
-
-.map-pin-icon {
-  color: #FCD34D;
-}
-
-.map-visual-placeholder span {
-  font-size: 1.05rem;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  background: #0F766E;
+  color: #FFFFFF;
+  font-size: 0.9rem;
   font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.map-visual-placeholder small {
-  color: #CCFBF1;
-  font-size: 0.75rem;
+.btn-map-directions:hover {
+  background: #115E59;
 }
 
-.map-note {
-  font-size: 0.85rem;
-  color: #64748B;
-  margin: 12px 0 0 0;
+.school-map-frame {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 12px;
 }
 
 @media (max-width: 992px) {

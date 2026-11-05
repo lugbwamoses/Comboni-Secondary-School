@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import Breadcrumbs from '../components/Breadcrumbs.jsx';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from '../components/Icons.jsx';
 import { useSite } from '../context/SiteContext.jsx';
+import { defaultSchoolAddress } from '../data/siteData.js';
 import './ContactPage.css';
 
 const ContactPage = () => {
   const { data } = useSite();
   const { settings } = data;
   const isConfigured = (value) => value && !value.startsWith('[');
+  const schoolAddress = isConfigured(settings.address) ? settings.address : defaultSchoolAddress;
+  const mapEmbedUrl = 'https://maps.google.com/maps?q=' + encodeURIComponent('St. Daniel Comboni Secondary School, Kator, Juba, South Sudan') + '&output=embed';
+  const mapDirectionsUrl = 'https://maps.app.goo.gl/cK2epdw4Hg6ysWLHA?g_st=ac';
 
   const [formState, setFormState] = useState({
     name: '',
@@ -123,7 +127,7 @@ const ContactPage = () => {
                 <div className="info-icon"><MapPin size={20} /></div>
                 <div>
                   <strong>Physical Address</strong>
-                  <p>{settings.address}</p>
+                  <p>{schoolAddress}</p>
                 </div>
               </div>
 
@@ -155,16 +159,25 @@ const ContactPage = () => {
             </address>
           </div>
 
-          {/* Interactive Location Placeholder Card */}
-          <div className="location-map-card">
-            <h4>Campus Location Map</h4>
-            <div className="map-visual-placeholder">
-              <MapPin size={32} className="map-pin-icon" />
-              <span>Juba, South Sudan</span>
-              <small>[Full school address to be confirmed]</small>
+          <section className="location-map-card" aria-labelledby="campus-map-title">
+            <div className="location-map-heading">
+              <div>
+                <h2 id="campus-map-title">Find the School</h2>
+                <p>{schoolAddress}</p>
+              </div>
+              <a className="btn-map-directions" href={mapDirectionsUrl} target="_blank" rel="noreferrer">
+                Get directions <ArrowRight size={16} aria-hidden="true" />
+              </a>
             </div>
-            <p className="map-note">The school’s exact address and map location will be added when confirmed.</p>
-          </div>
+            <iframe
+              className="school-map-frame"
+              title="Map showing St. Daniel Comboni Secondary School in Kator, Juba"
+              src={mapEmbedUrl}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </section>
         </aside>
 
       </div>
